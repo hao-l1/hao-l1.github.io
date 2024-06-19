@@ -35,11 +35,17 @@ note {
 }
 
 .hidden {
+  visibility: hidden;
   display: none;
 }
 
 .active {
   font-weight: bold;
+  text-decoration: underline;
+}
+
+.filter-link {
+  font-size: 18px; /* Increased font size */
 }
 
 /* .one {
