@@ -34,6 +34,20 @@ note {
   font-size: 13px;
 }
 
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.filter-link {
+  font-size: 18px; /* Increased font size */
+}
+
 /* .one {
   width: 220px;
   height: 220px;
