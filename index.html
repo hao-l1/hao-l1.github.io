@@ -1,0 +1,633 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Hao Li / 李 皓</title>
+  
+  <meta name="author" content="Hao Li">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<body onload="showSelected()">
+  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:68.5%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Hao Li / 李 皓</name>
+              </p>
+              <p>I am a PhD student in Mechanical Engineering at <a href=http://bdml.stanford.edu/Main/HomePage>Biomimetics & Dexterous Manipulation Laboratory</a>, advised by Prof. <a href=http://bdml.stanford.edu/Profiles/MarkCutkosky>Mark Cutkosky</a>. Additionaly, I am actively engaged in the <a href=https://khatib.stanford.edu/ocean-one-k.html>OceanOneK</a> project and have the previlige of working with Prof. <a href=https://cs.stanford.edu/groups/manips/ok.html>Oussama Khatib</a>. 
+              </p>
+              <p>
+                I was a MSc student in <a href=https://svl.stanford.edu/>Stanford Vision and Learning Lab</a>, working with Prof. <a href=https://jiajunwu.com>Jiajun Wu</a> and Prof. <a href=https://profiles.stanford.edu/fei-fei-li>Fei-Fei Li</a>.
+                I previously received my dual B.S. in Mechanical Engineering from Shanghai Jiao Tong University and Purdue University, where I was fortunate to be advised by <a href=https://scholar.google.com/citations?user=AUPTVF0AAAAJ&hl=en>Karthik Ramani</a> on Human-Computer Interaction.
+              </p>
+              <p>
+                I support diversity, equity, and inclusion. If you would like to have a chat with me regrading research, career plans or anything, feel free to reach out! I would be happy to support people from underrepresented groups in the STEM research community, and hope my expertise can help you.
+              </p>
+              <div style="text-align: center;">
+                <span>Email: hao.li [@] cs.stanford.edu</span>
+              </div>
+              <p style="text-align:center">
+                <a href="data/HaoLi_Resume.pdf">Resume</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=IDmUyTEAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://twitter.com/HaoL1R">Twitter</a> &nbsp/&nbsp
+                <a href="https://github.com/HaoLiRobo">GitHub</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:31.5%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.jpg" onmouseover="this.src='images/profile_2.jpg'" onmouseout="this.src='images/profile.jpg'">
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>News</heading>
+              <ul>
+                <li>[Nov 2024] We will present our whikser-inspired sensors with OceanOneK at <a href="https://src.stanford.edu/launch">Stanford Robotics Center Launch</a></li>
+                <li>[Oct 2024] "Grasp as You Say: Language-guided Dexterous Grasp Generation" is accepted by NeurIPS'24.</li>
+                <li>[Oct 2023] Passed my PhD Qualifying Exam! </li>
+                <li>[Jun 2023] "The Design of a Virtual Prototyping System for Authoring Interactive VR Environments from Real World Scans" is accepted by JCISE.</li>
+                <li>[Feb 2023] "The ObjectFolder Benchmark: Multisensory Object-Centric Learning with Neural and Real Objects" is accepted by CVPR'23.</li>
+                <li>[Jan 2023] "Sonicverse: A Multisensory Simulation Platform for Embodied Household Agents that See and Hear" is accepted by ICRA'23.</li>
+                <li>[Aug 2022] "See, Hear, Feel: Smart Sensory Fusion for Robotic Manipulation" is accepted by CoRL'22.</li>
+                <li>[Sep 2021] Started at Stanford as a MSc student in Mechanical Engineering.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research
+                ( <a href="#" id="filter-selected" onclick="showSelected(); return false;" class="filter-link active">Show Selected</a> |
+                <a href="#" id="filter-all" onclick="showAll(); return false;" class="filter-link">Show All</a> )
+              </heading>
+              <p>
+                I have been working on design, fabricate, and understand tactile sensors and the rich information brought by them.
+                I'm also    broadly interested in AI and robotics, including but not limited to perception, planning, control, hardware design, and human-centered AI. 
+                The goal of my research is to build agents that can achieve human-level of learning and adapt to novel and challenging scenarios by leveraging multisensory information including vision, audio, touch, etc.
+              </p>
+                          </td>
+          </tr>
+        </tbody></table>
+    <div id="selected">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <p>
+        <tr>
+          <td style="padding:20px;width:45%;vertical-align:top">
+            <a href="https://sites.google.com/stanford.edu/whiskertactile/home"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+              <source src="data/whisker_water.mp4" type="video/mp4" />
+          </video></a>
+          </td>
+          <td style="padding:20px;width:70%;vertical-align:top">
+            <a href="https://sites.google.com/stanford.edu/whiskertactile/home">
+            <!-- heading -->
+            <papertitle>Whisker-Inspired Tactile Sensing: A Sim2Real Approach for Precise Underwater Contact Tracking</papertitle>
+            </a>
+            <!-- authors -->
+            <br>
+            <strong>Hao Li*</strong>,
+            <a href="https://scholar.google.com/citations?user=BglGZXEAAAAJ&hl=en&oi=ao">Chengyi Xing*</a>,
+            <a href=https://profiles.stanford.edu/saad-ahmed-khan>Saad Khan</a>,
+            <a href="https://miaoyazhong.github.io">Miaoya Zhong</a>,
+            <a href=http://bdml.stanford.edu/Profiles/MarkCutkosky>Mark Cutkosky</a>
+            <note>(*Equal Contribution)</note>
+            <!-- conference & date -->
+            <br>
+            <em>Robotics and Automation Letters (RA-L), Under Review</em>
+            <br>
+            <!-- links -->
+            <a href="https://sites.google.com/stanford.edu/whiskertactile/home">project page</a>
+            / <a href="https://arxiv.org/abs/2410.14005">arXiv</a>
+            <!-- / <a href="TBD">code</a> -->
+            <p></p>
+            <p>We present the design of underwater whisker sensors with a sim-to-real learning framework for contact tracking. </p>
+            <!-- / <a href="TBD">arXiv</a> -->
+          </td>
+          </tr>
+        <tr>
+        <td style="padding:20px;width:30%;vertical-align:top">
+          <a href="https://sites.google.com/view/ijrr-2024-whisker/home"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+        <source src="data/whisker.mp4" type="video/mp4" />
+        </video></a>
+        </td>
+        <td style="padding:20px;width:70%;vertical-align:top">
+          <a href="https://sites.google.com/view/ijrr-2024-whisker/home">
+          <!-- heading -->
+          <papertitle>Navigation and 3D Surface Reconstruction from Passive Whisker Sensing</papertitle>
+          </a>
+          <!-- authors -->
+          <br>
+          <a href="https://www.michaelalin.com/">Michael A. Lin</a>,
+          <strong>Hao Li</strong>,
+          <a href="https://scholar.google.com/citations?user=BglGZXEAAAAJ&hl=en&oi=ao">Chengyi Xing</a>,
+          <a href=http://bdml.stanford.edu/Profiles/MarkCutkosky>Mark Cutkosky</a>
+          <!-- conference & date -->
+          <br>
+          <em>International Journal of Robotics Research (IJRR), Under Review</em>
+          <br>
+          <!-- links -->
+          <a href="https://sites.google.com/view/ijrr-2024-whisker/home">project page</a>
+          / <a href="https://www.arxiv.org/abs/2406.06038">arXiv</a>
+          / <a href="https://www.youtube.com/watch?v=Rvx4tWSkfu8">video</a>
+          / <a href="https://github.com/HaoLiRobo/WhiskerSensing/tree/main?tab=readme-ov-file">code</a>
+          <p></p>
+          <p>We present a method for using passive whiskers to gather sensory data as
+            brushing past objects during normal robot motion. </p>
+          <!-- / <a href="TBD">arXiv</a> -->
+        </td>
+        </tr>
+        <tr>
+          <td style="padding:20px;width:30%;vertical-align:top">
+            <a href="https://objectfolder.stanford.edu/"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+          <source src="data/obj_folder.mp4" type="video/mp4" />
+          </video></a>
+          </td>
+          <td style="padding:20px;width:70%;vertical-align:top">
+            <a href="https://objectfolder.stanford.edu/">
+            <!-- heading -->
+            <papertitle>The ObjectFolder Benchmark: Multisensory Object-Centric Learning with Neural and Real Objects</papertitle>
+            </a>
+            <!-- authors -->
+            <br>
+            <a href="https://ai.stanford.edu/~rhgao/">Ruohan Gao</a>*,
+            <a href="https://dou-yiming.github.io/">Yiming Dou</a>*,
+            <strong>Hao Li</strong>*,
+            <a href="http://tanmay-agarwal.com/">Tanmay Agarwal</a>,
+            <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>,
+            <a href="https://yunzhuli.github.io/"> Yunzhu Li</a>,
+            <a href=https://profiles.stanford.edu/fei-fei-li>Li Fei-Fei</a>,
+            <a href=https://jiajunwu.com>Jiajun Wu</a>
+            <note>(*Equal Contribution)</note>
+            <!-- conference & date -->
+            <br>
+            <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2023
+            <br>
+            <!-- links -->
+            <a href="https://www.objectfolder.org/swan_vis/">dataset demo</a>
+            / <a href="https://objectfolder.stanford.edu/">project page</a>
+            / <a href="https://arxiv.org/pdf/2306.00956.pdf">arXiv</a>
+            / <a href="https://www.youtube.com/watch?app=desktop&v=VhXDempUYgE">video</a>
+            / <a href="https://github.com/objectfolder">code</a>
+            <p></p>
+            <p>We introduce a
+              benchmark suite of 10 tasks for multisensory object-centric
+              learning, and a dataset, in-
+              cluding the multisensory measurements for 100 real-world
+              household objects. </p>
+            <!-- / <a href="TBD">arXiv</a> -->
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:20px;width:30%;vertical-align:top">
+            <a href="https://ai.stanford.edu/~rhgao/sonicverse/"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+          <source src="data/sonicverse.mp4" type="video/mp4" />
+          </video></a>
+          </td>
+          <td style="padding:20px;width:70%;vertical-align:top">
+            <a href="https://ai.stanford.edu/~rhgao/sonicverse/">
+            <!-- heading -->
+            <papertitle>Sonicverse: A Multisensory Simulation Platform for Embodied Household Agents that See and Hear</papertitle>
+            </a>
+            <!-- authors -->
+            <br>
+            <a href="https://ai.stanford.edu/~rhgao/">Ruohan Gao</a>*,
+            <strong>Hao Li</strong>*,
+            Gokul Dharan,
+            Zhuzhu Wang,
+            <a href="https://www.chengshuli.me/">Chengshu Li</a>,
+            <a href="https://fxia22.github.io">Fei Xia</a>,
+            <a href="https://scholar.google.com/citations?user=ImpbxLsAAAAJ&hl=en">Silvio Savarese</a>,
+            <a href=https://profiles.stanford.edu/fei-fei-li>Li Fei-Fei</a>,
+            <a href=https://jiajunwu.com>Jiajun Wu</a>
+            <note>(*Equal Contribution, in alphabetical order)</note>
+            <!-- conference & date -->
+            <br>
+            <em>International Conference on Robotics and Automation (ICRA)</em>, 2023
+            <br>
+            <!-- links -->
+            <a href="https://ai.stanford.edu/~rhgao/sonicverse/">project page</a>
+            / <a href="https://arxiv.org/pdf/2306.00923.pdf">arXiv</a>
+            / <a href="https://www.youtube.com/watch?v=veqC1K6pxbg">video</a>
+            / <a href="https://github.com/StanfordVL/sonicverse">code</a>
+            <p></p>
+            <p>We introduce a multisensory
+              simulation platform with integrated audio-visual simulation
+              for training household agents that can both see and hear.</p>
+            <!-- / <a href="TBD">arXiv</a> -->
+          </td>
+        </tr>
+    
+        <tr>
+          <td style="padding:20px;width:30%;vertical-align:top">
+            <a href="https://ai.stanford.edu/~rhgao/see_hear_feel/"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+          <source src="data/multisensory.mp4" type="video/mp4" />
+          </video></a>
+          </td>
+          <td style="padding:20px;width:70%;vertical-align:top">
+            <a href="https://ai.stanford.edu/~rhgao/see_hear_feel/">
+            <!-- heading -->
+            <papertitle>See, Hear, Feel: Smart Sensory Fusion for Robotic Manipulation</papertitle>
+            </a>
+            <!-- authors -->
+            <br>
+            <strong>Hao Li</strong>*,
+            Yizhi Zhang*,
+            <a href="https://josephzhu.com/">Junzhe Zhu</a>,
+            <a href="https://shaoxiongwang.com/">Shaoxiong Wang</a>,
+            <a href="https://scholar.google.com/citations?user=2Dmb3XYAAAAJ&hl=en">Michelle A. Lee</a>,
+            <a href="http://hxu.rocks/">Huazhe Xu</a>,
+            <a href="http://persci.mit.edu/people/adelson">Edward Adelson</a>,
+            <a href=https://profiles.stanford.edu/fei-fei-li>Li Fei-Fei</a>,
+            <a href="https://ai.stanford.edu/~rhgao/">Ruohan Gao</a>†,
+            <a href=https://jiajunwu.com>Jiajun Wu</a>†
+            <note>(*Equal Contribution)</note>
+            <note>(†Equal Advising)</note>
+            <!-- conference & date -->
+            <br>
+            <em>Conference on Robot Learning (CoRL)</em>, 2022
+            <br>
+            <!-- links -->
+            <a href="https://ai.stanford.edu/~rhgao/see_hear_feel/">project page</a>
+            / <a href="https://arxiv.org/pdf/2212.03858.pdf">arXiv</a>
+            / <a href="https://www.youtube.com/watch?v=sRdx3sa6ryk">video</a>
+            / <a href="https://github.com/JunzheJosephZhu/see_hear_feel">code</a>
+            <p></p>
+            <p>We build a robot system that can see with a camera, 
+              hear with a contact microphone, and feel with a vision-based tactile sensor.</p>
+            <!-- / <a href="TBD">arXiv</a> -->
+          </td>
+        </tr>
+      </p>
+    </tbody></table>
+    </div>
+
+  <div id="all" class="hidden">
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <p>
+      <tr>
+        <td style="padding:20px;width:45%;vertical-align:top">
+          <a href="https://sites.google.com/stanford.edu/whiskertactile/home"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+        <source src="data/whisker_water.mp4" type="video/mp4" />
+        </video></a>
+        </td>
+        <td style="padding:20px;width:70%;vertical-align:top">
+          <a href="https://sites.google.com/stanford.edu/whiskertactile/home">
+          <!-- heading -->
+          <papertitle>Whisker-Inspired Tactile Sensing: A Sim2Real Approach for Precise Underwater Contact Tracking</papertitle>
+          </a>
+          <!-- authors -->
+          <br>
+          <strong>Hao Li*</strong>,
+          <a href="https://scholar.google.com/citations?user=BglGZXEAAAAJ&hl=en&oi=ao">Chengyi Xing*</a>,
+          <a href=https://profiles.stanford.edu/saad-ahmed-khan>Saad Khan</a>,
+          <a href="https://miaoyazhong.github.io">Miaoya Zhong</a>,
+          <a href=http://bdml.stanford.edu/Profiles/MarkCutkosky>Mark Cutkosky</a>
+          <note>(*Equal Contribution)</note>
+          <!-- conference & date -->
+          <br>
+          <em>Robotics and Automation Letters (RA-L), Under Review</em>
+          <br>
+          <!-- links -->
+          <a href="https://sites.google.com/stanford.edu/whiskertactile/home">project page</a>
+          / <a href="https://arxiv.org/abs/2410.14005">arXiv</a>
+          <!-- / <a href="TBD">code</a> -->
+          <p></p>
+          <p>We present the design of underwater whisker sensors with a sim-to-real learning framework for contact tracking. </p>
+          <!-- / <a href="TBD">arXiv</a> -->
+        </td>
+        </tr>
+    <tr>
+    <td style="padding:20px;width:30%;vertical-align:top">
+      <a href="https://sites.google.com/view/ijrr-2024-whisker/home"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+    <source src="data/whisker.mp4" type="video/mp4" />
+    </video></a>
+    </td>
+    <td style="padding:20px;width:70%;vertical-align:top">
+      <a href="https://sites.google.com/view/ijrr-2024-whisker/home">
+      <!-- heading -->
+      <papertitle>Navigation and 3D Surface Reconstruction from Passive Whisker Sensing</papertitle>
+      </a>
+      <!-- authors -->
+      <br>
+      <a href="https://www.michaelalin.com/">Michael A. Lin</a>,
+      <strong>Hao Li</strong>,
+      <a href="https://scholar.google.com/citations?user=BglGZXEAAAAJ&hl=en&oi=ao">Chengyi Xing</a>,
+      <a href=http://bdml.stanford.edu/Profiles/MarkCutkosky>Mark Cutkosky</a>
+      <!-- conference & date -->
+      <br>
+      <em>International Journal of Robotics Research (IJRR), Under Review</em>
+      <br>
+      <!-- links -->
+      <a href="https://sites.google.com/view/ijrr-2024-whisker/home">project page</a>
+      / <a href="https://www.arxiv.org/abs/2406.06038">arXiv</a>
+      / <a href="https://www.youtube.com/watch?v=Rvx4tWSkfu8">video</a>
+      / <a href="https://github.com/HaoLiRobo/WhiskerSensing/tree/main?tab=readme-ov-file">code</a>
+      <p></p>
+      <p>We present a method for using passive whiskers to gather sensory data as
+        brushing past objects during normal robot motion.</p>
+      <!-- / <a href="TBD">arXiv</a> -->
+    </td>
+    </tr>
+
+    <tr>
+    <td style="padding:20px;width:30%;vertical-align:top">
+      <a href="https://sites.google.com/stanford.edu/dexgys"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+    <source src="data/grasp.mp4" type="video/mp4" />
+    </video></a>
+    </td>
+    <td style="padding:20px;width:70%;vertical-align:top">
+      <a href="https://sites.google.com/stanford.edu/dexgys">
+      <!-- heading -->
+      <papertitle>Grasp as You Say: Language-guided Dexterous Grasp Generation</papertitle>
+      </a>
+      <!-- authors -->
+      <br>
+      <a href="https://wyl2077.github.io/">Yi-Lin Wei</a>,
+      Jian-Jian Jiang,
+      <a href="https://scholar.google.com/citations?user=BglGZXEAAAAJ&hl=en&oi=ao">Chengyi Xing</a>,
+      Xian-Tuo Tan,
+      <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
+      <strong>Hao Li</strong>,
+      <a href=http://bdml.stanford.edu/Profiles/MarkCutkosky>Mark Cutkosky</a>
+      <a href=https://www.isee-ai.cn/~zhwshi>Wei-Shi Zheng</a>
+      <!-- conference & date -->
+      <br>
+      <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024
+      <br>
+      <!-- links -->
+      <a href="https://sites.google.com/stanford.edu/dexgys">project page</a>
+      / <a href="https://arxiv.org/abs/2405.19291">arXiv</a>
+      <p></p>
+      <p>We explores a novel task DexGYS, enabling robots to perform dexterous grasping based on human commands expressed in natural language.</p>
+      <!-- / <a href="TBD">arXiv</a> -->
+    </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:top">
+        <a href="https://asmedigitalcollection.asme.org/computingengineering/article/doi/10.1115/1.4062970/1164457"> <img style="width:107%;max-width:107%" src="images/VRDesign.png" class="hoverZoomLink">
+        </a>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:top">
+        <a href="https://asmedigitalcollection.asme.org/computingengineering/article/doi/10.1115/1.4062970/1164457">
+        <!-- heading -->
+        <papertitle>The Design of a Virtual Prototyping System for Authoring Interactive VR Environments from Real World Scans</papertitle>
+        </a>
+        <!-- authors -->
+        <br>
+        <a href="https://engineering.purdue.edu/cdesign/wp/author/ananya/">Ananya Ipsita</a>*,
+        Runlin Duan*,
+        <strong>Hao Li</strong>*,
+        <a href="https://schidamb.github.io/">Subramanian Chidambaram</a>,
+        <a href="https://www.yuanzhi-cao.com/">Yuanzhi Cao</a>,
+        Min Liu,
+        Alexander J Quinn,
+        <a href=https://scholar.google.com/citations?user=AUPTVF0AAAAJ&hl=en>Karthik Ramani</a>
+        <note>(*Equal Contribution)</note>
+        <!-- conference & date -->
+        <br>
+        <em>Journal of Computing and Information Science in Engineering (JCISE)</em>
+        <br>
+        <!-- links -->
+        <a href="https://asmedigitalcollection.asme.org/computingengineering/article/doi/10.1115/1.4062970/1164457">arXiv</a>
+        <p></p>
+        <p>Using our VRFromX system, we performed a usability evaluation with 20 DUs from which 12 were novices in VR programming with a welding use case. </p>
+        <!-- / <a href="TBD">arXiv</a> -->
+      </td>
+    </tr>
+          
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:top">
+        <a href="https://objectfolder.stanford.edu/"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+      <source src="data/obj_folder.mp4" type="video/mp4" />
+      </video></a>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:top">
+        <a href="https://objectfolder.stanford.edu/">
+        <!-- heading -->
+        <papertitle>The ObjectFolder Benchmark: Multisensory Object-Centric Learning with Neural and Real Objects</papertitle>
+        </a>
+        <!-- authors -->
+        <br>
+        <a href="https://ai.stanford.edu/~rhgao/">Ruohan Gao</a>*,
+        <a href="https://dou-yiming.github.io/">Yiming Dou</a>*,
+        <strong>Hao Li</strong>*,
+        <a href="http://tanmay-agarwal.com/">Tanmay Agarwal</a>,
+        <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>,
+        <a href="https://yunzhuli.github.io/"> Yunzhu Li</a>,
+        <a href=https://profiles.stanford.edu/fei-fei-li>Li Fei-Fei</a>,
+        <a href=https://jiajunwu.com>Jiajun Wu</a>
+        <note>(*Equal Contribution)</note>
+        <!-- conference & date -->
+        <br>
+        <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2023
+        <br>
+        <!-- links -->
+        <a href="https://www.objectfolder.org/swan_vis/">dataset demo</a>
+        / <a href="https://objectfolder.stanford.edu/">project page</a>
+        / <a href="https://arxiv.org/pdf/2306.00956.pdf">arXiv</a>
+        / <a href="https://www.youtube.com/watch?app=desktop&v=VhXDempUYgE">video</a>
+        / <a href="https://github.com/objectfolder">code</a>
+        <p></p>
+        <p>We introduce a
+          benchmark suite of 10 tasks for multisensory object-centric
+          learning, and a dataset, in-
+          cluding the multisensory measurements for 100 real-world
+          household objects. </p>
+        <!-- / <a href="TBD">arXiv</a> -->
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:top">
+        <a href="https://ai.stanford.edu/~rhgao/sonicverse/"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+      <source src="data/sonicverse.mp4" type="video/mp4" />
+      </video></a>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:top">
+        <a href="https://ai.stanford.edu/~rhgao/sonicverse/">
+        <!-- heading -->
+        <papertitle>Sonicverse: A Multisensory Simulation Platform for Embodied Household Agents that See and Hear</papertitle>
+        </a>
+        <!-- authors -->
+        <br>
+        <a href="https://ai.stanford.edu/~rhgao/">Ruohan Gao</a>*,
+        <strong>Hao Li</strong>*,
+        Gokul Dharan,
+        Zhuzhu Wang,
+        <a href="https://www.chengshuli.me/">Chengshu Li</a>,
+        <a href="https://fxia22.github.io">Fei Xia</a>,
+        <a href="https://scholar.google.com/citations?user=ImpbxLsAAAAJ&hl=en">Silvio Savarese</a>,
+        <a href=https://profiles.stanford.edu/fei-fei-li>Li Fei-Fei</a>,
+        <a href=https://jiajunwu.com>Jiajun Wu</a>
+        <note>(*Equal Contribution, in alphabetical order)</note>
+        <!-- conference & date -->
+        <br>
+        <em>International Conference on Robotics and Automation (ICRA)</em>, 2023
+        <br>
+        <!-- links -->
+        <a href="https://ai.stanford.edu/~rhgao/sonicverse/">project page</a>
+        / <a href="https://arxiv.org/pdf/2306.00923.pdf">arXiv</a>
+        / <a href="https://www.youtube.com/watch?v=veqC1K6pxbg">video</a>
+        / <a href="https://github.com/StanfordVL/sonicverse">code</a>
+        <p></p>
+        <p>We introduce a multisensory
+          simulation platform with integrated audio-visual simulation
+          for training household agents that can both see and hear.</p>
+        <!-- / <a href="TBD">arXiv</a> -->
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:top">
+        <a href="https://ai.stanford.edu/~rhgao/see_hear_feel/"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+      <source src="data/multisensory.mp4" type="video/mp4" />
+      </video></a>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:top">
+        <a href="https://ai.stanford.edu/~rhgao/see_hear_feel/">
+        <!-- heading -->
+        <papertitle>See, Hear, Feel: Smart Sensory Fusion for Robotic Manipulation</papertitle>
+        </a>
+        <!-- authors -->
+        <br>
+        <strong>Hao Li</strong>*,
+        Yizhi Zhang*,
+        <a href="https://josephzhu.com/">Junzhe Zhu</a>,
+        <a href="https://shaoxiongwang.com/">Shaoxiong Wang</a>,
+        <a href="https://scholar.google.com/citations?user=2Dmb3XYAAAAJ&hl=en">Michelle A. Lee</a>,
+        <a href="http://hxu.rocks/">Huazhe Xu</a>,
+        <a href="http://persci.mit.edu/people/adelson">Edward Adelson</a>,
+        <a href=https://profiles.stanford.edu/fei-fei-li>Li Fei-Fei</a>,
+        <a href="https://ai.stanford.edu/~rhgao/">Ruohan Gao</a>†,
+        <a href=https://jiajunwu.com>Jiajun Wu</a>†
+        <note>(*Equal Contribution)</note>
+        <note>(†Equal Advising)</note>
+        <!-- conference & date -->
+        <br>
+        <em>Conference on Robot Learning (CoRL)</em>, 2022
+        <br>
+        <!-- links -->
+        <a href="https://ai.stanford.edu/~rhgao/see_hear_feel/">project page</a>
+        / <a href="https://arxiv.org/pdf/2212.03858.pdf">arXiv</a>
+        / <a href="https://www.youtube.com/watch?v=sRdx3sa6ryk">video</a>
+        / <a href="https://github.com/JunzheJosephZhu/see_hear_feel">code</a>
+        <p></p>
+        <p>We build a robot system that can see with a camera, 
+          hear with a contact microphone, and feel with a vision-based tactile sensor.</p>
+        <!-- / <a href="TBD">arXiv</a> -->
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:top">
+        <a href="https://engineering.purdue.edu/cdesign/wp/vrfromx-from-scanned-reality-to-interactive-virtual-experience-with-human-in-the-loop/"><video id="v0" width="100%" preload="auto" playsinline="" muted="" loop="" autoplay="" style="width:107%;max-width:107%">
+      <source src="data/VRFromX.mp4" type="video/mp4" />
+      </video></a>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:top">
+        <a href="https://engineering.purdue.edu/cdesign/wp/vrfromx-from-scanned-reality-to-interactive-virtual-experience-with-human-in-the-loop/">
+        <!-- heading -->
+        <papertitle>VRFromX: From Scanned Reality to Interactive Virtual Experience with Human-in-the-Loop</papertitle>
+        </a>
+        <!-- authors -->
+        <br>
+        <a href="https://engineering.purdue.edu/cdesign/wp/author/ananya/">Ananya Ipsita</a>,
+        <strong>Hao Li</strong>,
+        Runlin Duan,
+        <a href="https://www.yuanzhi-cao.com/">Yuanzhi Cao</a>,
+        <a href="https://schidamb.github.io/">Subramanian Chidambaram</a>,
+        Min Liu,
+        <a href=https://scholar.google.com/citations?user=AUPTVF0AAAAJ&hl=en>Karthik Ramani</a>
+        <!-- conference & date -->
+        <br>
+        <em>Conference on Human Factors in Computing Systems (CHI)</em>, 2021
+        <br>
+        <!-- links -->
+        <a href="https://engineering.purdue.edu/cdesign/wp/vrfromx-from-scanned-reality-to-interactive-virtual-experience-with-human-in-the-loop/">project page</a>
+        / <a href="https://engineering.purdue.edu/cdesign/wp/wp-content/uploads/2021/06/VRFromX-1.pdf"> arXiv</a>
+        / <a href="https://www.youtube.com/watch?v=27egu5VkL0M"> video</a>
+        <!-- / <a href="TBD">arXiv</a> -->
+        <p></p>
+        <p> We build a system that allows
+          users to select region(s) of interest (ROI) in scanned point cloud or
+          sketch in mid-air to enable interactive VR experience.</p>
+      </td>
+    </tr>
+    </p>
+  </tbody></table>
+  </div>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Academic Services</heading>
+              <p>
+                Reviewer for CoRL, ICLR, RAL, CHI 
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+          <heading>Teaching</heading>
+          <p>
+            Organizer of <a href="https://stanfordasl.github.io/robotics_seminar/"> ENGR319: Stanford Robotics Seminar</a>, Stanford University, 2024-
+          </p>
+          <p>
+            Course Assistant in <a href="https://stanfordasl.github.io//PoRA-I/aa274a_aut2324/">AA274A: Principle of Robot Autonomy</a>, Stanford University, 2022
+          </p>
+          <p>
+            Course Assistant in <a href="https://cs231n.stanford.edu/">CS231N: Deep Learning for Computer Vision</a>, Stanford University, 2023
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                <a href="https://github.com/jonbarron/jonbarron_website">Template from Jon Barron's website</a>
+              </p>
+            </td>
+            <td style="text-align:right;">
+              <!-- <td style="padding:300px;width:15%;vertical-align:middle"> -->
+              <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=2NmscI4iZxxfuoDbbJvZzjVOT14kVLh72R9xOD8Ww8g"></script>
+            </td>
+          </tr>
+    </tbody></table>
+  </table>
+
+  <script>
+    function showSelected() {
+      console.log('Showing selected content');
+      document.getElementById('selected').classList.remove('hidden');
+      document.getElementById('all').classList.add('hidden');
+      document.getElementById('filter-selected').classList.add('active');
+      document.getElementById('filter-all').classList.remove('active');
+    }
+
+    function showAll() {
+      console.log('Showing all content');
+      document.getElementById('selected').classList.add('hidden');
+      document.getElementById('all').classList.remove('hidden');
+      document.getElementById('filter-selected').classList.remove('active');
+      document.getElementById('filter-all').classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
